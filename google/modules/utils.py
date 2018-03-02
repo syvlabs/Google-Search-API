@@ -40,7 +40,7 @@ def _get_search_url(query, page=0, per_page=10, lang='en'):
     params = {'nl': lang, 'q': query.encode(
         'utf8'), 'start': page * per_page, 'num': per_page}
     params = urlencode(params)
-    url = u"http://www.google.com/search?" + params
+    url = u"http://www.google.com.ph/search?" + params
     # return u"http://www.google.com/search?hl=%s&q=%s&start=%i&num=%i" %
     # (lang, normalize_query(query), page * per_page, per_page)
     return url
